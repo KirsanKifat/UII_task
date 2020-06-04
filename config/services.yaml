@@ -4,6 +4,12 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
+    mail.from: 'Gmail for send mail'
+    mail.login: 'Your Gmail login'
+    mail.password: 'Your Gmail password'
+    mail.message.flight_cancel.header: 'Flight canceled' #header message
+    mail.message.flight_cancel.text: 'We apologize, flight canceled. Flight code: ' #message value (after message added number flight code)
+    provider_key: 'IJ12Jfgvck3DSGG234dsdfNHBXndsjs71j8fJ8kLLvhakvk323'
 
 services:
     # default configuration for services in *this* file

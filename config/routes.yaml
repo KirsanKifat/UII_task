@@ -1,3 +1,27 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+ticket-booking:
+  path: /ticket-booking
+  controller: App\Controller\TicketController::booking
+
+ticket-cancel-booking:
+  path: /ticket-cancel-booking
+  controller: App\Controller\TicketController::cancelBooking
+
+ticket-sale:
+  path: /ticket-sale
+  controller: App\Controller\TicketController::sale
+
+ticket-cancel-sale:
+  path: /ticket-cancel-sale
+  controller: App\Controller\TicketController::cancelSale
+
+events:
+  path: /events
+  controller: App\Controller\EventController::index
+
+test:
+  path: /test
+  controller: App\Controller\EventController::test
