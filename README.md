@@ -1,9 +1,9 @@
-### install components ###
+### Install components ###
 ###### composer install #######
 
 ### DB ###
-###### .env set params your DB ######
-###### execute console command: "php bin/console doctrine:migrations:migrate" ####### 
+###### в корневом файле .env установите параметры вашей базы данных ######
+###### Введите в консоль команду: "php bin/console doctrine:migrations:migrate" ####### 
 
 ### Базовое заполненеие БД ###
 ###### Так как системы создания пользователей не реализована, так же как не реализована система создания рейсов, чтобы не заполнять в ручную бд, создан генератор базовых значений ######
@@ -15,19 +15,19 @@
 ###### на странице https://mail.google.com/mail/u/0/#settings/fwdandpop включить IMAP ######
 
 ### User documentation ###
-##### for address: #####
+##### Для следующих роутов: #####
 ###### /ticket-booking ######
 ###### /ticket-cancel-booking ######
 ###### /ticket-sale ######
 ###### /ticket-cancel-sale ######
-##### need Get params: #####
-###### secret_key - user secret key ######
-###### flight - id flight ######
-###### seat - seat number from 0 to 150 ######
+##### передаются следующие Get параметры: #####
+###### secret_key - секретных ключ пользователя ######
+###### flight - id рейса ######
+###### seat - номер посадочного места от 1 до 150 ######
 
-##### for address: #####
+##### Для следующих роутов: #####
 ###### /events ######
-##### need Get params: #####
-###### secret_key - user secret key ######
-###### flight - id flight ######
-###### event - event name ######
+##### передаются следующие Get параметры: #####
+###### secret_key - секретных ключ пользователя ######
+###### flight - id рейса ######
+###### event - код события ######
